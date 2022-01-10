@@ -148,6 +148,7 @@ def menu():
     print((m+"\n["+k+"1"+m+"]"+o+" Crack FB From My Friend"))
     print((m+"["+k+"2"+m+"]"+k+" Crack FB From Public Friend"))
     print((m+"["+k+"3"+m+"]"+u+" Crack FB From Followers"))
+    print((p+"["+k+"4"+m+"]"+m+" Delete Token"))    
     print((p+"["+m+"0"+p+"]"+m+" Logout"))
     choose_menu()
 	
@@ -162,8 +163,10 @@ def choose_menu():
 		publik()
 	elif r=="3":
 		follow()
-	elif r=="4":
-		ress()
+	elif r=='4' or asw =='04':
+		jalan(' [!] Delete Token....');time.sleep(1)
+		os.system('rm -rf login_r.txt')
+		login()
 	elif r=="0":
 		try:
 			jalan(k+"\n["+p+"-"+k+"]"+p+" Thanks For Using My Script")
