@@ -452,7 +452,7 @@ class crack:
 				else:continue
 					
 			self.ko+=1
-			print('\r [Crack] %s/%s OK :%s - CP :%s '%(self.ko,len(self.fl),len(self.ada),len(self.cp)), end=' ');sys.stdout.flush()
+			sys.stdout.write('\r [Crack] %s/%s OK :%s - CP :%s '%(self.ko,len(self.fl),len(self.ada),len(self.cp)), end=' ');sys.stdout.flush()
 		except:
 			self.main(fl)
 
