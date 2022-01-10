@@ -152,7 +152,7 @@ def menu():
     choose_menu()
 	
 def choose_menu():
-	r=input(m+"\n["+k+"•"+m+"]"+h+" Choose : ")
+	r=input(m+"\n["+k+"-"+m+"]"+h+" Choose : ")
 	if r=="":
 		print((k+"["+p+"!"+k+"]"+p+" Fill In The Correct"))
 		menu()
@@ -374,9 +374,9 @@ class crack:
 		self.ada=[]
 		self.cp=[]
 		self.ko=0
-		print((k+"\n["+p+"•"+k+"]"+p+" Crack With Pass Default/Manual [d/m]"))
+		print((k+"\n["+p+"-"+k+"]"+p+" Crack With Pass Default/Manual [d/m]"))
 		while True:
-			f=input(k+"["+p+"•"+k+"]"+p+" Choose : ")
+			f=input(k+"["+p+"-"+k+"]"+p+" Choose : ")
 			if f=="":continue
 			elif f=="m":
 				try:
@@ -396,7 +396,7 @@ class crack:
 				except Exception as e:
 					print(("   %s"%e))
 					continue
-				print((k+"["+p+"•"+k+"]"+p+" Example : sayang,bismillah,123456"))
+				print((k+"["+p+"-"+k+"]"+p+" Example : sayang,bismillah,123456"))
 				self.pwlist()
 				break
 			elif f=="d":
@@ -416,13 +416,13 @@ class crack:
 						except:continue
 				except Exception as e:
 					print(("   %s"%e))
-				print((k+"\n["+p+"•"+k+"]"+p+" Crack Started..."+k+"\n["+p+"•"+k+"]"+p+" Account [OK] Saved to : ok.txt"+k+"\n["+p+"•"+k+"]"+p+" Account [CP] Saved to : cp.txt\n"))
+				print((k+"\n["+p+"-"+k+"]"+p+" Crack Started..."+k+"\n["+p+"•"+k+"]"+p+" Account [OK] Saved to : ok.txt"+k+"\n["+p+"•"+k+"]"+p+" Account [CP] Saved to : cp.txt\n"))
 				ThreadPool(35).map(self.main,self.fl)
 				os.remove(self.apk)
 				exit()
 				break
 	def pwlist(self):
-		self.pw=input(k+"["+p+"•"+k+"]"+p+" Password List : ").split(",")
+		self.pw=input(k+"["+p+"-"+k+"]"+p+" Password List : ").split(",")
 		if len(self.pw) ==0:
 			self.pwlist()
 		else:
