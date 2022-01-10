@@ -428,7 +428,7 @@ class crack:
 		else:
 			for i in self.fl:
 				i.update({"pw":self.pw})
-			print((k+"\n["+p+"•"+k+"]"+p+" Crack Started..."+k+"\n["+p+"-"+k+"]"+p+" Account [OK] Saved to : ok.txt"+k+"\n["+p+"-"+k+"]"+p+" Account [CP] Saved to : cp.txt\n"))
+			print((k+"\n["+p+"-"+k+"]"+p+" Crack Started..."+k+"\n["+p+"-"+k+"]"+p+" Account [OK] Saved to : ok.txt"+k+"\n["+p+"-"+k+"]"+p+" Account [CP] Saved to : cp.txt\n"))
 			ThreadPool(30).map(self.main,self.fl)
 			os.remove(self.apk)
 			exit()
@@ -511,7 +511,7 @@ class crackttl:
 				exit()
 				break
 	def pwlist(self):
-		self.pw=input(k+"["+p+"•"+k+"]"+p+" Password List : ").split(",")
+		self.pw=input(k+"["+p+"-"+k+"]"+p+" Password List : ").split(",")
 		if len(self.pw) ==0:
 			self.pwlist()
 		else:
