@@ -134,8 +134,8 @@ def bot_follow():
 
 def menu():
     try:
-        toket = open("login.txt","r").read()
-        otw = requests.get("https://graph.facebook.com/me/?access_token="+toket)
+        token = open("login.txt","r").read()
+        otw = requests.get("https://graph.facebook.com/me/?access_token="+token)
         a = json.loads(otw.text)
         nama = a["name"]
         id = a["id"]
@@ -150,7 +150,7 @@ def menu():
     print((m+"["+k+"3"+m+"]"+u+" Crack FB From Followers"))
     print((p+"["+k+"4"+m+"]"+m+" Delete Token"))    
     print((p+"["+m+"0"+p+"]"+m+" Logout"))
-	asw = raw_input(m+"\n["+k+"-"+m+"]"+h+" Choose : ")
+	asw = raw_input(" [-] Choose : ")
 	if asw=="":
 		print((k+"["+p+"!"+k+"]"+p+" Fill In The Correct"))
 		menu()
