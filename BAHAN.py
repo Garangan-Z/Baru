@@ -163,7 +163,7 @@ def choose_menu():
 		publik()
 	elif r=="3":
 		follow()
-	elif r=='4' or asw =='04':
+	elif r=="4" or r=="04":
 		jalan(' [!] Delete Token....');time.sleep(1)
 		os.system('rm -rf login_r.txt')
 		login()
