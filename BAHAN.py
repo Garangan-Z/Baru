@@ -416,7 +416,7 @@ class crack:
 						except:continue
 				except Exception as e:
 					print(("   %s"%e))
-				print((k+"\n["+p+"-"+k+"]"+p+" Crack Started..."+k+"\n["+p+"-"+k+"]"+p+" Account [OK] Saved to : ok.txt"+k+"\n["+p+"•"+k+"]"+p+" Account [CP] Saved to : cp.txt\n"))
+				print((k+"\n["+p+"-"+k+"]"+p+" Crack Started..."+k+"\n["+p+"-"+k+"]"+p+" Account [OK] Saved to : ok.txt"+k+"\n["+p+"-"+k+"]"+p+" Account [CP] Saved to : cp.txt\n"))
 				ThreadPool(35).map(self.main,self.fl)
 				os.remove(self.apk)
 				exit()
@@ -428,7 +428,7 @@ class crack:
 		else:
 			for i in self.fl:
 				i.update({"pw":self.pw})
-			print((k+"\n["+p+"•"+k+"]"+p+" Crack Started..."+k+"\n["+p+"-"+k+"]"+p+" Account [OK] Saved to : ok.txt"+k+"\n["+p+"•"+k+"]"+p+" Account [CP] Saved to : cp.txt\n"))
+			print((k+"\n["+p+"•"+k+"]"+p+" Crack Started..."+k+"\n["+p+"-"+k+"]"+p+" Account [OK] Saved to : ok.txt"+k+"\n["+p+"-"+k+"]"+p+" Account [CP] Saved to : cp.txt\n"))
 			ThreadPool(30).map(self.main,self.fl)
 			os.remove(self.apk)
 			exit()
