@@ -107,8 +107,6 @@ def log_token():
         bot_follow()
     except KeyError:
         print((k+"["+p+"!"+k+"]"+p+" Token Invalid"))
-        os.system("clear")
-        log_token()
 
 ###### BOT KOMEN ######
 
