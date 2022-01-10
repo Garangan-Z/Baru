@@ -166,7 +166,7 @@ def choose_menu():
 		ress()
 	elif r=="0":
 		try:
-			jalan(k+"\n["+p+"•"+k+"]"+p+" Thanks For Using My Script")
+			jalan(k+"\n["+p+"-"+k+"]"+p+" Thanks For Using My Script")
 			os.system("rm -rf login.txt")
 			exit()
 		except Exception as e:
@@ -221,7 +221,7 @@ def publik():
 	try:
 		os.system('clear')
 		banner()
-		idt = input(m+"["+k+"•"+m+"]"+p+" User ID Target : ")
+		idt = input(m+"["+k+"-"+m+"]"+p+" User ID Target : ")
 		try:
 			jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
 			op = json.loads(jok.text)
