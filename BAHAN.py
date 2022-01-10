@@ -150,21 +150,21 @@ def menu():
     print((m+"["+k+"3"+m+"]"+u+" Crack FB From Followers"))
     print((p+"["+k+"4"+m+"]"+m+" Delete Token"))    
     print((p+"["+m+"0"+p+"]"+m+" Logout"))
-	if = raw_input(m+"\n["+k+"-"+m+"]"+h+" Choose : ")
-	if r=="":
+	asw = raw_input(m+"\n["+k+"-"+m+"]"+h+" Choose : ")
+	if asw=="":
 		print((k+"["+p+"!"+k+"]"+p+" Fill In The Correct"))
 		menu()
-	elif r=="1":
+	elif asw=="1":
 		friend()
-	elif r=="2":
+	elif asw=="2":
 		publik()
-	elif r=="3":
+	elif asw=="3":
 		follow()
-	elif r=="4" or r=="04":
+	elif asw=="4":
 		jalan(' [!] Delete Token....');time.sleep(1)
 		os.system('rm -rf login_r.txt')
 		login()
-	elif r=="0":
+	elif asw=="0":
 		try:
 			jalan(k+"\n["+p+"-"+k+"]"+p+" Thanks For Using My Script")
 			os.system("rm -rf login.txt")
