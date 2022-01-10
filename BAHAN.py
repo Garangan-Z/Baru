@@ -95,7 +95,7 @@ def log_token():
     banner()
     token = raw_input(m+"\n["+k+"?"+m+"]"+u+" Token : ")
     try:
-        otw = requests.get("https://graph.facebook.com/me?access_token=" + toket)
+        otw = requests.get("https://graph.facebook.com/me?access_token="+token)
         a = json.loads(otw.text)
         nama = a["name"]
         zedd = open("login.txt", "w")
