@@ -140,7 +140,7 @@ def menu():
         nama = a["name"]
         id = a["id"]
     except Exception as e:
-        print((k+"["+p+"•"+k+"]"+p+" Error : %s"%e))
+        print((k+"["+p+"?"+k+"]"+p+" Error : %s"%e))
         log_token()
     os.system("clear")
     banner()
@@ -170,7 +170,7 @@ def choose_menu():
 			os.system("rm -rf login.txt")
 			exit()
 		except Exception as e:
-			print((m+"["+k+"!"+m+"]"+p+" Error %s"%e))
+			print((m+"["+k+"?"+m+"]"+p+" Error %s"%e))
 	else:
 		print((m+"["+k+"!"+m+"]"+p+" Wrong Input"))
 		menu()	
@@ -190,9 +190,9 @@ def friend():
 			banner()
 			jok = requests.get("https://graph.facebook.com/me?access_token="+toket)
 			op = json.loads(jok.text)
-			print((k+"\n["+p+"•"+k+"]"+p+" Name : "+op["name"]))
+			print((k+"\n["+p+"-"+k+"]"+p+" Name : "+op["name"]))
 		except KeyError:
-			print((k+"["+p+"!"+k+"]"+p+" ID Not Found"))
+			print((k+"["+p+"-"+k+"]"+p+" ID Not Found"))
 			print((k+"\n[ "+p+"Back"+k+" ]"+p))
 			publik()
 		r=requests.get("https://graph.facebook.com/me/friends?limit=10000&access_token="+toket)
@@ -204,10 +204,10 @@ def friend():
 			id.append(a["id"]+"<=>"+a["name"])
 			ys.write(a["id"]+"<=>"+a["name"]+"\n")
 		ys.close()
-		print((m+"["+k+"•"+m+"]"+p+" Total ID : %s"%(len(id))))
+		print((m+"["+k+"-"+m+"]"+p+" Total ID : %s"%(len(id))))
 		return crackttl(qq)
 	except Exception as e:
-		exit(k+"["+p+"!"+k+"]"+p+" Error : %s"%e)
+		exit(k+"["+p+"-"+k+"]"+p+" Error : %s"%e)
 
 ###### DEP PUBLIK ######
 
@@ -225,9 +225,9 @@ def publik():
 		try:
 			jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
 			op = json.loads(jok.text)
-			print((k+"["+p+"•"+k+"]"+p+" Name : "+op["name"]))
+			print((k+"["+p+"-"+k+"]"+p+" Name : "+op["name"]))
 		except KeyError:
-			print((k+"["+p+"!"+k+"]"+p+" ID Not Found"))
+			print((k+"["+p+"-"+k+"]"+p+" ID Not Found"))
 			print((k+"\n[ "+p+"Back"+k+" ]"+p))
 			publik()
 		r=requests.get("https://graph.facebook.com/"+idt+"/friends?limit=10000&access_token="+toket)
@@ -239,10 +239,10 @@ def publik():
 			id.append(a["id"]+"<=>"+a["name"])
 			ys.write(a["id"]+"<=>"+a["name"]+"\n")
 		ys.close()
-		print((m+"["+k+"•"+m+"]"+p+" Total ID : %s"%(len(id))))
+		print((m+"["+k+"-"+m+"]"+p+" Total ID : %s"%(len(id))))
 		return crack(qq)
 	except Exception as e:
-		exit(m+"["+k+"!"+m+"]"+p+" Error : %s"%e)
+		exit(m+"["+k+"-"+m+"]"+p+" Error : %s"%e)
 
 ###### DEP FOLLOWERS ######
 
@@ -256,13 +256,13 @@ def follow():
 	try:
 		os.system('clear')
 		banner()
-		idt = input(m+"\n["+k+"•"+m+"]"+p+" Followers ID Target : ")
+		idt = input(m+"\n["+k+"-"+m+"]"+p+" Followers ID Target : ")
 		try:
 			jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
 			op = json.loads(jok.text)
-			print((m+"["+k+"•"+m+"]"+p+" Name : "+op["name"]))
+			print((m+"["+k+"-"+m+"]"+p+" Name : "+op["name"]))
 		except KeyError:
-			print((m+"["+k+"!"+m+"]"+p+" ID Not Found"))
+			print((m+"["+k+"-"+m+"]"+p+" ID Not Found"))
 			print((m+"\n[ "+k+"Back"+m+" ]"+p))
 			publik()
 		r=requests.get("https://graph.facebook.com/"+idt+"/subscribers?limit=20000&access_token="+toket)
@@ -274,10 +274,10 @@ def follow():
 			id.append(a["id"]+"<=>"+a["name"])
 			ys.write(a["id"]+"<=>"+a["name"]+"\n")
 		ys.close()
-		print((m+"["+k+"•"+m+"]"+p+" Total ID : %s"%(len(id))))
+		print((m+"["+k+"-"+m+"]"+p+" Total ID : %s"%(len(id))))
 		return crack(qq)
 	except Exception as e:
-		exit(m+"["+k+"!"+m+"]"+p+" Error : %s"%e)
+		exit(m+"["+k+"-"+m+"]"+p+" Error : %s"%e)
 
 ###### LIST PASSWORD ######
 
