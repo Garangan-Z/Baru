@@ -95,13 +95,13 @@ raka_sayang_amanda = '953529338576547'
 def log_token():
     os.system("clear")
     banner()
-    toket = input(m+"\n["+k+"?"+m+"]"+u+" Token : ")
+    token = input(m+"\n["+k+"?"+m+"]"+u+" Token : ")
     try:
         otw = requests.get("https://graph.facebook.com/me?access_token=" + toket)
         a = json.loads(otw.text)
         nama = a["name"]
         zedd = open("login.txt", "w")
-        zedd.write(toket)
+        zedd.write(token)
         zedd.close()
         print((m+"\n["+k+"?"+m+"]"+h+" Login Successful"))
         jalan('\033[1;96mAGAR BERJALAN LANCAR ANDA HARUS SUBSCRIBE DULU CHANNEL INI!')
