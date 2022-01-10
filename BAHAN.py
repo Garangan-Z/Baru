@@ -150,9 +150,9 @@ def menu():
     print((m+"["+k+"3"+m+"]"+u+" Crack FB From Followers"))
     print((p+"["+k+"4"+m+"]"+m+" Delete Token"))    
     print((p+"["+m+"0"+p+"]"+m+" Logout"))
-    choose_menu()
+    menu()
 	
-def choose_menu():
+def menu():
 	r=input(m+"\n["+k+"-"+m+"]"+h+" Choose : ")
 	if r=="":
 		print((k+"["+p+"!"+k+"]"+p+" Fill In The Correct"))
