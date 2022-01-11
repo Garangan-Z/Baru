@@ -59,14 +59,14 @@ def menu_log():
     clear()
     banner()
     var_menu()
-    pmu = input('%s╠══®[%s•%s]◍➤ %sChoose : '%(O,P,O,P))
+    pmu = input('%s╠══®[%s•%s] %sChoose : '%(O,P,O,P))
     print('%s║'%(O))
     if pmu in ['']:
         jalan('%s╚══®[%s!%s]◍➤ %sIsi Yang Benar'%(M,P,M,P))
         menu_log()
     elif pmu in ['1','01','001','a']:
         defaultua()
-        token = input('%s╚══®[%s•%s]◍➤ %sToken : '%(O,P,O,P))
+        token = input('%s╚══®[%s•%s] %sToken : '%(O,P,O,P))
         try:
             x = requests.get("https://graph.facebook.com/me?access_token=" + token)
             y = json.loads(x.text)
