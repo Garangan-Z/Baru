@@ -7,6 +7,7 @@ from random import randint
 from concurrent.futures import ThreadPoolExecutor as ThreadPool
 from bs4 import BeautifulSoup as par
 from datetime import date
+from datetime import datetime
 from urllib.parse import quote
 P = "\x1b[0;97m" # Putih
 M = "\x1b[0;91m" # Merah
