@@ -5,7 +5,7 @@ from multiprocessing.pool import ThreadPool
 from requests.exceptions import ConnectionError
 from bs4 import BeautifulSoup as parser
 from urllib2 import urlopen
-from menu_instagram import menu_instagram
+from manda_instagram import manda_instagram
 reload(sys)
 sys.setdefaultencoding("utf-8")
 
