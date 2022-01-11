@@ -79,7 +79,7 @@ def masuk():
             gas = requests.get('https://graph.facebook.com/me?access_token=%s'%(romz)).json()['name']
             print ('\n%s[√] Login berhasil, mohon tunggu '%(H));jeda(2)
             open('token.txt', 'w').write(romz);login_xx()
-         except (KeyError,IOError):
+        except (KeyError,IOError):
         	print("%s [!] Token invalid "%(M));masuk()
     elif rom in ('2', '02'):
     	print ("\n%s%s Berikut cara nya :"%(H,til));jeda(2)
