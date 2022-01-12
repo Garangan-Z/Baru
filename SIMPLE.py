@@ -217,10 +217,10 @@ def crack():
 	print(garis)
 
 	def main(user):
+		random.choice(['\033[0;33m','\033[0;36m','\033[0;90m','\033[0;35m','\033[0;31m','\033[0;00m'])
 		global loop, token
 		ra_pw = []
 		sys.stdout.write(
-		__warna_warni__ = random.choice(['\033[0;33m','\033[0;36m','\033[0;90m','\033[0;35m','\033[0;31m','\033[0;00m'])
 		      '\r[%sR] Crack %s - %s \x1b[1;96mMohon Ditunggu... \x1b[1;97m! ' % (ra,loop, len(id))
 		); sys.stdout.flush()
 		try:os.mkdir("results")
