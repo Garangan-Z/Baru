@@ -221,14 +221,14 @@ def crack():
 	print("\x1b[1;97m[\x1b[1;96m-\x1b[1;97m] Total ID  : \x1b[1;92m"+str(len(id)))
 	print(garis)
 	print("\x1b[1;97mKlick \x1b[1;92mCTRL+Z \x1b[1;97mUntuk Berhenti ...")
-        print("\x1b[1;97mNote : Jika Tak Ada Hasil Mainkan Mode Pesawat \x1b[1;92m1 \x1b[1;97mDetik...?")
+        print("\x1b[1;92mNote : \x1b[1;97mJika Tak Ada Hasil Mainkan Mode Pesawat \x1b[1;92m1 \x1b[1;97mDetik...?")
 	print(garis)
 
 	def main(user):
 		global loop, token
 		ra_pw = []
 		sys.stdout.write(
-		      '\r[\x1b[1;92mR\x1b[1;97m] Crack %s - %s \x1b[1;96mMohon Ditunggu... \x1b[1;97m! ' % (loop, len(id))
+		      '\r[\x1b[1;92mR\x1b[1;97m] Crack %s - %s \x1b[1;92mMohon Ditunggu... \x1b[1;97m! ' % (loop, len(id))
 		); sys.stdout.flush()
 		try:os.mkdir("results")
 		except OSError:pass
