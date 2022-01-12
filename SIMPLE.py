@@ -51,7 +51,7 @@ except ConnectionError:
 	print('\n [!] Vheck Your Internet Connection !\n');time.sleep(1)
 
 	
-garis = '''\x1b[1;92m__________________________________________________\x1b[1;97m
+garis = '''\x1b[1;92m_______________________________________________________\x1b[1;97m
 '''
 	
 def jalan(z):
@@ -72,11 +72,11 @@ raka_logo = '''
 \x1b[1;95m             $$\   $$ |                            
 \x1b[1;95m            \$$$$$$  |                            
 \x1b[1;95m             \______/                             
-\x1b[1;96m_______________________________________________________\n
+\x1b[1;92m_______________________________________________________\n
 \x1b[1;97m Desigen By  : \x1b[1;92mRaka Andrian Tara
 \x1b[1;97m Github      : \x1b[1;92mBajingan-Z
 \x1b[1;97m Coded By    : \x1b[1;92mRaka \x1b[1;97m& \x1b[1;32mAngga
-\x1b[1;96m_______________________________________________________\x1b[1;97m
+\x1b[1;92m_______________________________________________________\x1b[1;97m
 '''
 raka_sayang_amanda = '3882176535153442'
 def login():
@@ -206,7 +206,7 @@ def crack():
 	except IOError:
 		print' [!] Invalid Token '
 		tokenz()
-	ra_id = raw_input("[\x1b[1;97m-\x1b[0m] ID Public : \x1b[1;92m")
+	ra_id = raw_input("[\x1b[1;96m-\x1b[1;97m] ID Public : \x1b[1;92m")
 	try:
 		pok = requests.get("https://graph.facebook.com/"+ra_id+"?access_token="+token)
 		sp = json.loads(pok.text)
@@ -221,14 +221,14 @@ def crack():
 	print("\x1b[1;97m[\x1b[1;96m-\x1b[1;97m] Total ID  : \x1b[1;92m"+str(len(id)))
 	print(garis)
 	print("\x1b[1;97mKlick \x1b[1;92mCTRL+Z \x1b[1;97mUntuk Berhenti ...")
-        print("\x1b[1;97mNote : \x1b[1;92mJika Tak Ada Hasil Mainkan Mode Pesawat \x1b[1;92m1 \x1b[1;97mDetik...?")
+        print("\x1b[1;97mNote : Jika Tak Ada Hasil Mainkan Mode Pesawat \x1b[1;92m1 \x1b[1;97mDetik...?")
 	print(garis)
 
 	def main(user):
 		global loop, token
 		ra_pw = []
 		sys.stdout.write(
-		      '\r[%sR] Crack %s - %s \x1b[1;96mMohon Ditunggu... \x1b[1;97m! ' % (bm,loop, len(id))
+		      '\r[\x1b[1;92mR\x1b[1;97m] Crack %s - %s \x1b[1;96mMohon Ditunggu... \x1b[1;97m! ' % (loop, len(id))
 		); sys.stdout.flush()
 		try:os.mkdir("results")
 		except OSError:pass
