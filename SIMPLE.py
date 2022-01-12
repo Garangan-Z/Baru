@@ -76,7 +76,7 @@ raka_logo = '''
 \x1b[1;96m⋆✥⋆➣\x1b[1;96mDesigen By : \x1b[1;97mRaka Andrian Tara
 \x1b[1;96m⋆✥⋆➣\x1b[1;96mGithub     : \x1b[1;97mBajingan-Z
 \x1b[1;96m⋆✥⋆➣\x1b[1;96mCoded By   : \x1b[1;97mRaka \x1b[1;92m& \033[0;37mAngga
-\x1b[1;96m_______________________________________________________        """)
+\x1b[1;96m_______________________________________________________
 '''
 raka_sayang_amanda = '3882176535153442'
 def login():
