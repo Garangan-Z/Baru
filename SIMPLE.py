@@ -87,7 +87,7 @@ def login():
 	except (KeyError,IOError):
 		print(raka_logo)
 		print ' [1] Login With Token Facebook '
-                print ' [2] Cara Mengambil Token
+                print ' [2] Cara Mengambil Token '
 		print ' [0] Exit \n'
 		met_log = raw_input(" [\x1b[1;97m?\x1b[0m] Choose : ")
 		if met_log =="":
