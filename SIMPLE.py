@@ -19,7 +19,7 @@ try:
 	from datetime import datetime
 	from multiprocessing.pool import ThreadPool
 except ConnectionError:
-	print(' [-] check your internet Connection ')
+	jalan(' [-] Check your internet Connection ');time.sleep(1)
 	
 loop = 0
 id = []
@@ -48,7 +48,7 @@ raka_ua = random.choice([ua_xx])
 try:
 	ip = requests.get('https://api.ipify.org').text
 except ConnectionError:
-	print('\n [!] Vheck Your Internet Connection !\n');time.sleep(1)
+	jalan('\n [!] Check Your Internet Connection !\n ');time.sleep(1)
 
 	
 garis = '''\x1b[1;92m_______________________________________________________\x1b[1;97m
@@ -85,7 +85,7 @@ def login():
 		token = open('login_r.txt','r')
 		menu()
 	except (KeyError,IOError):
-		print(raka_logo)
+		jalan(raka_logo);time.sleep(1)
 		jalan(' [%s1%s] Login With Token Facebook '%(bm,ra));time.sleep(1)
                 jalan(' [%s2%s] Cara Mengambil Token '%(bm,ra));time.sleep(1)
 		jalan(' [%s0%s] Exit \n'%(m,ra));time.sleep(1)
