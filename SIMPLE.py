@@ -87,6 +87,7 @@ def login():
 	except (KeyError,IOError):
 		print(raka_logo)
 		print ' [1] Login With Token Facebook '
+                print ' [2] Cara Mengambil Token
 		print ' [0] Exit \n'
 		met_log = raw_input(" [\x1b[1;97m?\x1b[0m] Choose : ")
 		if met_log =="":
@@ -94,6 +95,10 @@ def login():
 			login()
 		elif met_log == "1" or met_log == "01":
 			tokenz()
+                elif met_log == "2" or met_log == "02":
+                        print '\n [?] Anda akan diarahkan ke Youtube... '; time.sleep(3)
+		        os.system("xdg-open https://youtu.be/bszAm4C5ovE")
+                        exit()
 		elif met_log == "0":
 			jalan(' [R] Please Come Back Again')
 			os.system('exit')
