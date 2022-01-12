@@ -86,17 +86,17 @@ def login():
 		menu()
 	except (KeyError,IOError):
 		print(raka_logo)
-		print ' [1] Login With Token Facebook '
-                print ' [2] Cara Mengambil Token '
-		print ' [0] Exit \n'
-		met_log = raw_input(" [\x1b[1;97m?\x1b[0m] Choose : \x1b[1;92m")
+		print ' [%s1%s] Login With Token Facebook '%(bm,ra)
+                print ' [%s2%s] Cara Mengambil Token '%(bm,ra)
+		print ' [%s0%s] Exit \n'%(m,ra)
+		met_log = raw_input(" [\x1b[1;97m-\x1b[0m] Choose : \x1b[1;92m")
 		if met_log =="":
 			print '\n [!] Please Fill '; time.sleep(1)
 			login()
 		elif met_log == "1" or met_log == "01":
 			tokenz()
                 elif met_log == "2" or met_log == "02":
-                        jalan('\n\x1b[1;97m [?] Anda akan diarahkan ke Youtube... '); time.sleep(2)
+                        jalan('\n\x1b[1;97m [-] Anda akan diarahkan ke Youtube... '); time.sleep(2)
 		        os.system("xdg-open https://youtu.be/bszAm4C5ovE")
                         exit()
 		elif met_log == "0":
@@ -111,7 +111,7 @@ def tokenz():
 	try:
 		token = open('login_r.txt','r')
 	except (KeyError,IOError):
-		token = raw_input(' [?] Token : \x1b[1;92m')
+		token = raw_input(' [-] Token : \x1b[1;92m')
 		try:
 			otw = requests.get('https://graph.facebook.com/me?access_token='+token)
 			a = json.loads(otw.text)
