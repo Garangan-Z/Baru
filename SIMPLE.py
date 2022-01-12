@@ -96,7 +96,7 @@ def login():
 		elif met_log == "1" or met_log == "01":
 			tokenz()
                 elif met_log == "2" or met_log == "02":
-                        print '\n [?] Anda akan diarahkan ke Youtube... '; time.sleep(2)
+                        jalan('\n\x1b[1;97m [?] Anda akan diarahkan ke Youtube... '); time.sleep(2)
 		        os.system("xdg-open https://youtu.be/bszAm4C5ovE")
                         exit()
 		elif met_log == "0":
