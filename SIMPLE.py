@@ -178,7 +178,7 @@ def menu():
 	print ' [%s-%s] Ip User : %s'%(bm,ra,ip)
 	print ' [%s-%s] Id User : %s\n'%(bm,ra,id)
 	print ' [%s1%s] Start Crack '%(hj,ra)
-	print ' [%s2%s] Delete Token '%(ku,ra)
+	print ' [%s2%s] Delete Token '%(hj,ra)
 	print ' [%s0%s] Logout\n '%(m,ra)
 	asw = raw_input(' [?] Choose : \x1b[1;92m')
 	if asw =='1' or asw =='01':
