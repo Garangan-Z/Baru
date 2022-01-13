@@ -86,9 +86,9 @@ def login():
 		menu()
 	except (KeyError,IOError):
 		jalan(raka_logo);time.sleep(00.01)
-		jalan(' [%s1%s] Login With Token Facebook '%(bm,ra));time.sleep(1)
-                jalan(' [%s2%s] Cara Mengambil Token '%(bm,ra));time.sleep(1)
-		jalan(' [%s0%s] Exit \n'%(m,ra));time.sleep(1)
+		jalan(' [%s1%s] Login With Token Facebook '%(bm,ra));time.sleep(00.01)
+                jalan(' [%s2%s] Cara Mengambil Token '%(bm,ra));time.sleep(00.01)
+		jalan(' [%s0%s] Exit \n'%(m,ra));time.sleep(00.01)
 		met_log = raw_input(" [\x1b[1;97m-\x1b[0m] Choose : \x1b[1;92m")
 		if met_log =="":
 			print '\n [!] Please Fill '; time.sleep(1)
@@ -96,7 +96,7 @@ def login():
 		elif met_log == "1" or met_log == "01":
 			tokenz()
                 elif met_log == "2" or met_log == "02":
-                        jalan('\n\x1b[1;97m [-] Anda akan diarahkan ke \x1b[1;92mYoutube\x1b[1;97m... \n [-] Simak Baik Baik Step \x1b[1;92mby\x1b[1;97m Step Nya... '); time.sleep(3)
+                        jalan('\n\x1b[1;97m [-] Anda akan diarahkan ke \x1b[1;92mYoutube\x1b[1;97m... \n [-] Simak Baik Baik Step \x1b[1;92mby\x1b[1;97m Step Nya... '); time.sleep(5)
 		        os.system("xdg-open https://youtu.be/bszAm4C5ovE")
                         exit()
 		elif met_log == "0":
