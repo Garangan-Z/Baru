@@ -85,7 +85,7 @@ def login():
 		token = open('login_r.txt','r')
 		menu()
 	except (KeyError,IOError):
-		jalan(raka_logo);time.sleep(00.01)
+		jalan(raka_logo);time.sleep(00.0)
 		jalan(' [%s1%s] Login With Token Facebook '%(bm,ra));time.sleep(1)
                 jalan(' [%s2%s] Cara Mengambil Token '%(bm,ra));time.sleep(1)
 		jalan(' [%s0%s] Exit \n'%(m,ra));time.sleep(1)
@@ -107,7 +107,7 @@ def login():
 
 def tokenz():
 	os.system('clear')
-	jalan(raka_logo);time.sleep(00.01)
+	jalan(raka_logo);time.sleep(00.0)
 	try:
 		token = open('login_r.txt','r')
 	except (KeyError,IOError):
@@ -199,7 +199,7 @@ def menu():
 		
 def crack():
 	os.system('clear')
-	jalan(raka_logo);time.sleep(00.01)
+	jalan(raka_logo);time.sleep(00.0)
 	global token
 	try:
 		token = open('login_r.txt', 'r').read()
@@ -293,7 +293,7 @@ def crack():
 
 if __name__ == '__main__':
 	#os.system('clear')
-	#jalan(raka_logo);time.sleep(00.01)
+	#jalan(raka_logo);time.sleep(00.0)
 	#user = raw_input(' [\x1b[1;97m?\x1b[0m] Siapa Nama Anda : ')
 	#print# ' Hello : %s'#%(user)
 	#lock()
