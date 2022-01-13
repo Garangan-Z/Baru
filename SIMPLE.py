@@ -112,7 +112,7 @@ def tokenz():
 		token = open('login_r.txt','r')
 	except (KeyError,IOError):
 		token = raw_input(' [\x1b[1;92m-\x1b[1;97m] Token : \x1b[1;92m')
-                print(' \n[\x1b[1;92m-\x1b[1;97m] Pleace Wait ... ')
+                jalan(' \x1b[1;97m[\x1b[1;92m-\x1b[1;97m] Pleace Wait \x1b[1;92m...\x1b[1;97m ');time.sleep(1)
 		try:
 			otw = requests.get('https://graph.facebook.com/me?access_token='+token)
 			a = json.loads(otw.text)
