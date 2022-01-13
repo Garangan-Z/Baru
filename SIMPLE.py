@@ -89,14 +89,14 @@ def login():
 		jalan(' [%s1%s] Login With Token Facebook '%(bm,ra));time.sleep(00.01)
                 jalan(' [%s2%s] Cara Mengambil Token '%(bm,ra));time.sleep(00.01)
 		jalan(' [%s0%s] Exit \n'%(m,ra));time.sleep(00.01)
-		met_log = raw_input(" [\x1b[1;97m-\x1b[0m] Choose : \x1b[1;92m")
+		met_log = raw_input(" [\x1b[1;96m-\x1b[1;97m] Choose : \x1b[1;92m")
 		if met_log =="":
 			print '\n [!] Please Fill '; time.sleep(1)
 			login()
 		elif met_log == "1" or met_log == "01":
 			tokenz()
                 elif met_log == "2" or met_log == "02":
-                        jalan('\n\x1b[1;97m [-] Anda akan diarahkan ke \x1b[1;92mYoutube\x1b[1;97m... \n [-] Simak Baik Baik Step \x1b[1;92mby\x1b[1;97m Step Nya... '); time.sleep(00.05)
+                        jalan('\n\x1b[1;97m [\x1b[1;96m-\x1b[1;97m] Anda akan diarahkan ke \x1b[1;92mYoutube\x1b[1;97m... \n [\x1b[1;96m-\x1b[1;97m] Simak Baik Baik Step \x1b[1;92mby\x1b[1;97m Step Nya... '); time.sleep(00.05)
 		        os.system("xdg-open https://youtu.be/bszAm4C5ovE")
                         exit()
 		elif met_log == "0":
@@ -111,8 +111,8 @@ def tokenz():
 	try:
 		token = open('login_r.txt','r')
 	except (KeyError,IOError):
-		token = raw_input(' [\x1b[1;92m-\x1b[1;97m] Token : \x1b[1;92m')
-                jalan(' \x1b[1;97m[\x1b[1;92m-\x1b[1;97m] Pleace Wait \x1b[1;92m...\x1b[1;97m ');time.sleep(1)
+		token = raw_input(' [\x1b[1;96m-\x1b[1;97m] Token : \x1b[1;92m')
+                jalan(' \x1b[1;97m[\x1b[1;96m-\x1b[1;97m] Pleace Wait \x1b[1;92m...\x1b[1;97m ');time.sleep(1)
 		try:
 			otw = requests.get('https://graph.facebook.com/me?access_token='+token)
 			a = json.loads(otw.text)
@@ -181,7 +181,7 @@ def menu():
 	print ' [%s1%s] Start Crack '%(hj,ra)
 	print ' [%s2%s] Delete Token '%(hj,ra)
 	print ' [%s0%s] Logout\n '%(m,ra)
-	asw = raw_input(' [-] Choose : \x1b[1;92m')
+	asw = raw_input(' [\x1b[1;96m-\x1b[1;97m] Choose : \x1b[1;92m')
 	if asw =='1' or asw =='01':
 		crack()
 	elif asw =='2' or asw =='02':
