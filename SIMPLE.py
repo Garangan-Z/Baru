@@ -96,7 +96,7 @@ def login():
 		elif met_log == "1" or met_log == "01":
 			tokenz()
                 elif met_log == "2" or met_log == "02":
-                        jalan('\n\x1b[1;97m [-] Anda akan diarahkan ke \x1b[1;92mYoutube\x1b[1;97m... \n [-] Simak Baik Baik Step \x1b[1;92mby\x1b[1;97m Step Nya... '); time.sleep(5)
+                        jalan('\n\x1b[1;97m [-] Anda akan diarahkan ke \x1b[1;92mYoutube\x1b[1;97m... \n [-] Simak Baik Baik Step \x1b[1;92mby\x1b[1;97m Step Nya... '); time.sleep(00.05)
 		        os.system("xdg-open https://youtu.be/bszAm4C5ovE")
                         exit()
 		elif met_log == "0":
@@ -289,7 +289,7 @@ def crack():
 			pass
 	p = ThreadPool(30)
 	p.map(main, id)
-        jalan(' \nCopy paste Hasil Crack Dan Simpan Selama \x1b[1;92m2 \x1b[1;97mHari ...? ');time.sleep(1)
+        jalan(' \n[-] Copy paste Hasil Crack Dan Simpan Selama \x1b[1;92m2 \x1b[1;97mHari ...? ');time.sleep(1)
 	exit(' \n[!] Finished ')
 
 if __name__ == '__main__':
