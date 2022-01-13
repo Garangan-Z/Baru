@@ -58,7 +58,7 @@ def jalan(z):
 	for i in z + '\n':
 		sys.stdout.write(i)
 		sys.stdout.flush()
-		time.sleep(00.1)
+		time.sleep(00.01)
 
 raka_logo = '''
 \x1b[1;91m       $$$$$$$$\ $$\                             $$$$$$$\  
@@ -85,7 +85,7 @@ def login():
 		token = open('login_r.txt','r')
 		menu()
 	except (KeyError,IOError):
-		jalan(raka_logo);time.sleep(0)
+		jalan(raka_logo);time.sleep(00.01)
 		jalan(' [%s1%s] Login With Token Facebook '%(bm,ra));time.sleep(1)
                 jalan(' [%s2%s] Cara Mengambil Token '%(bm,ra));time.sleep(1)
 		jalan(' [%s0%s] Exit \n'%(m,ra));time.sleep(1)
@@ -107,7 +107,7 @@ def login():
 
 def tokenz():
 	os.system('clear')
-	jalan(raka_logo);time.sleep(0)
+	jalan(raka_logo);time.sleep(00.01)
 	try:
 		token = open('login_r.txt','r')
 	except (KeyError,IOError):
@@ -173,7 +173,7 @@ def menu():
 		login()
 	except requests.exceptions.ConnectionError:
 		print(' [!] Check Your Internet Vonnection ')
-	jalan(raka_logo);time.sleep(0)
+	jalan(raka_logo);time.sleep(00.01)
 	print ' [%s-%s] Nama    : %s'%(hj,ra,nama)
 	print ' [%s-%s] Ip User : %s'%(hj,ra,ip)
 	print ' [%s-%s] Id User : %s\n'%(hj,ra,id)
@@ -199,7 +199,7 @@ def menu():
 		
 def crack():
 	os.system('clear')
-	jalan(raka_logo);time.sleep(0)
+	jalan(raka_logo);time.sleep(00.01)
 	global token
 	try:
 		token = open('login_r.txt', 'r').read()
@@ -293,7 +293,7 @@ def crack():
 
 if __name__ == '__main__':
 	#os.system('clear')
-	#jalan(raka_logo);time.sleep(0)
+	#jalan(raka_logo);time.sleep(00.01)
 	#user = raw_input(' [\x1b[1;97m?\x1b[0m] Siapa Nama Anda : ')
 	#print# ' Hello : %s'#%(user)
 	#lock()
