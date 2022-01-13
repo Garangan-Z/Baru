@@ -107,7 +107,7 @@ def login():
 
 def tokenz():
 	os.system('clear')
-	jalan(raka_logo);time.sleep(00.01)
+	print(raka_logo)
 	try:
 		token = open('login_r.txt','r')
 	except (KeyError,IOError):
@@ -199,7 +199,7 @@ def menu():
 		
 def crack():
 	os.system('clear')
-	jalan(raka_logo);time.sleep(00.01)
+	print(raka_logo)
 	global token
 	try:
 		token = open('login_r.txt', 'r').read()
