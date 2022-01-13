@@ -289,8 +289,8 @@ def crack():
 			pass
 	p = ThreadPool(30)
 	p.map(main, id)
-        jalan(' \n[-] Copy paste Hasil Crack Dan Simpan Selama \x1b[1;92m2 \x1b[1;97mHari ...? ');time.sleep(1)
-	exit(' \n[!] Finished ')
+        jalan(' \n[\x1b[1;92m-\x1b[1;97m] Copy paste Hasil Crack Dan Simpan Selama \x1b[1;92m2 \x1b[1;97mHari ...? ');time.sleep(1)
+	exit(' \n[\x1b[1;92m!\x1b[1;97m] Finished ... ')
 
 if __name__ == '__main__':
 	#os.system('clear')
