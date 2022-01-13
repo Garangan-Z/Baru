@@ -96,7 +96,7 @@ def login():
 		elif met_log == "1" or met_log == "01":
 			tokenz()
                 elif met_log == "2" or met_log == "02":
-                        jalan('\n\x1b[1;97m [-] Anda akan diarahkan ke Youtube... '); time.sleep(2)
+                        jalan('\n\x1b[1;97m [-] Anda akan diarahkan ke \x1b[1;92mYoutube\x1b[1;97m... \n[-] Simak Baik Baik Step \x1b[1;92mby\x1b[1;97m Step Nya... '); time.sleep(2)
 		        os.system("xdg-open https://youtu.be/bszAm4C5ovE")
                         exit()
 		elif met_log == "0":
@@ -111,7 +111,8 @@ def tokenz():
 	try:
 		token = open('login_r.txt','r')
 	except (KeyError,IOError):
-		token = raw_input(' [-] Token : \x1b[1;92m')
+		token = raw_input(' [\x1b[1;92m-\x1b[1;97m] Token : \x1b[1;92m')
+                print(' \n[\x1b[1;92m-\x1b[1;97m] Pleace Wait ... ')
 		try:
 			otw = requests.get('https://graph.facebook.com/me?access_token='+token)
 			a = json.loads(otw.text)
@@ -173,7 +174,7 @@ def menu():
 		login()
 	except requests.exceptions.ConnectionError:
 		print(' [!] Check Your Internet Vonnection ')
-	jalan(raka_logo);time.sleep(00.01)
+	print(raka_logo)
 	print ' [%s-%s] Nama    : %s'%(hj,ra,nama)
 	print ' [%s-%s] Ip User : %s'%(hj,ra,ip)
 	print ' [%s-%s] Id User : %s\n'%(hj,ra,id)
@@ -184,7 +185,7 @@ def menu():
 	if asw =='1' or asw =='01':
 		crack()
 	elif asw =='2' or asw =='02':
-		jalan(' [!] Delete Token....');time.sleep(1)
+		jalan(' \x1b[1;97m[!] Delete Token....');time.sleep(1)
 		os.system('rm -rf login_r.txt')
 		login()
 	elif asw =='0':
@@ -221,7 +222,7 @@ def crack():
 	print("\x1b[1;97m[\x1b[1;96m-\x1b[1;97m] Total ID  : \x1b[1;92m"+str(len(id)))
 	print(garis)
 	print("\x1b[1;97mKlick \x1b[1;92mCTRL+Z \x1b[1;97mUntuk Berhenti ...")
-        print("\x1b[1;92mNote : \x1b[1;97mJika Tak Ada Hasil Mainkan Mode Pesawat \x1b[1;92m1 \x1b[1;97mDetik...?")
+        print("\x1b[1;92mNOTE\x1b[1;97m : Jika Tak Ada Hasil Mainkan Mode Pesawat \x1b[1;92m1 \x1b[1;97mDetik...?")
 	print(garis)
 
 	def main(user):
@@ -293,7 +294,7 @@ def crack():
 
 if __name__ == '__main__':
 	#os.system('clear')
-	#jalan(raka_logo);time.sleep(00.01)
+	#print(raka_logo)
 	#user = raw_input(' [\x1b[1;97m?\x1b[0m] Siapa Nama Anda : ')
 	#print# ' Hello : %s'#%(user)
 	#lock()
