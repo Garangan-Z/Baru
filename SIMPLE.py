@@ -114,12 +114,6 @@ def animate():
         sys.stdout.write('\r\033[0;93mLoading ' + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c )
         sys.stdout.flush()
         time.sleep(0.1)
- 
-t = threading.Thread(target=animate)
-t.start()
- 
-time.sleep(5)
-done = True
 
 def tokenz():
 	os.system('clear')
