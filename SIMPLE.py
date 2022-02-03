@@ -223,7 +223,7 @@ def crack():
 	print("\x1b[1;97m[\x1b[1;96m-\x1b[1;97m] Total ID  : \x1b[1;92m"+str(len(id)))
 	print(garis)
 	print("\x1b[1;97mKlick \x1b[1;92mCTRL+Z \x1b[1;97mUntuk Berhenti ...")
-        print("\x1b[1;92mNOTE\x1b[1;97m : Jika Tak Ada Hasil Mainkan Mode Pesawat \x1b[1;92m1 \x1b[1;97mDetik...?")
+        print("\x1b[1;92mNOTE\x1b[1;97m : Jika Tak Ada Hasil Mode Pesawat \x1b[1;92m1 \x1b[1;97mDetik..?")
 	print(garis)
 
 	def main(user):
