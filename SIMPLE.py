@@ -105,6 +105,22 @@ def login():
 		else:
 			login()
 
+os.system('clear')
+done = False
+def animate():
+    for c in itertools.cycle(['\033[0;96m|', '\033[0;92m/', '\033[0;95m-', '\033[0;91m\\']):
+        if done:
+            break
+        sys.stdout.write('\r\033[0;93mLoading ' + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c )
+        sys.stdout.flush()
+        time.sleep(0.1)
+ 
+t = threading.Thread(target=animate)
+t.start()
+ 
+time.sleep(5)
+done = True
+
 def tokenz():
 	os.system('clear')
 	print(raka_logo)
